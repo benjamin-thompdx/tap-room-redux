@@ -35,7 +35,7 @@ function NewTapForm(){
         <input 
           type='number'
           name='quantity'
-          placeholder='tap quantity (in pints)' />
+          placeholder='tap quantity' />
         <button type='submit'>add tap</button>
       </form>
     </React.Fragment>
