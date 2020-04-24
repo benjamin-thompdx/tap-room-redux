@@ -31,7 +31,7 @@ function TapList(){
       {masterTapList.map((tap, index) =>
         <Tap
           name={tap.name}
-          brand={tap.name}
+          brand={tap.brand}
           price={tap.price}
           style={tap.style}
           quantity={tap.quantity}/>
