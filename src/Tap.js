@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 function Tap(props){
   return (
     <React.Fragment>
-      <p>{props.name}</p>
-      <p>{props.brand}</p>
-      <p>{props.price}</p>
-      <p>{props.style}</p>
-      <p>Quantity: {props.quantity.join}</p>
+      <p><strong>Name:</strong> <em>{props.name}</em></p>
+      <p><strong>Brand:</strong> <em>{props.brand}</em></p>
+      <p><strong>Price:</strong> <em>${props.price}</em></p>
+      <p><strong>Style:</strong> <em>{props.style}</em></p>
+      <p><strong>Quantity:</strong> <em>{props.quantity} pints</em></p>
       <button type="submit">Sell</button>
     </React.Fragment>
   )
