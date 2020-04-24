@@ -8,7 +8,7 @@ function Tap(props){
       <p>{props.brand}</p>
       <p>{props.price}</p>
       <p>{props.style}</p>
-      <p>Quantity: {props.quantity}</p>
+      <p>Quantity: {props.quantity.join}</p>
       <button type="submit">Sell</button>
     </React.Fragment>
   )

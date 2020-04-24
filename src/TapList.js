@@ -3,24 +3,24 @@ import Tap from './Tap';
 
 const masterTapList = [
   {
-    name: "Green Monster",
-    brand: "Portland Brewers Guild",
+    name: 'Green Monster',
+    brand: 'Portland Brewers Guild',
     price: 8,
-    style: "Stout",
+    style: 'Stout',
     quantity: 124
   },
   {
-    name: "Hoppin' Out",
-    brand: "Portland Brewers Guild",
+    name: 'Hoppin Out',
+    brand: 'Portland Brewers Guild',
     price: 9,
-    style: "Pale Ale",
+    style: 'Pale Ale',
     quantity: 124
   },
   {
-    name: "Sour Squeeze",
-    brand: "Portland Brewers Guild",
+    name: 'Sour Squeeze',
+    brand: 'Portland Brewers Guild',
     price: 8,
-    style: "Sour",
+    style: 'Sour',
     quantity: 124
   }
 ];
