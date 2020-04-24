@@ -29,13 +29,15 @@ import PropTypes from 'prop-types';
 function TapList(props){
   return (
     <React.Fragment>
-      {props.tapList.map((tap, index) =>
+      {props.tapList.map((tap) =>
         <Tap
+          whenTapClicked = {props.onTapSelection}
           name={tap.name}
           brand={tap.brand}
           price={tap.price}
           style={tap.style}
           quantity={tap.quantity}
+          id={ticket.id}
           key={index}/>
       )}
     </React.Fragment>
@@ -43,7 +45,8 @@ function TapList(props){
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array
-}
+  tapList: PropTypes.array,
+  onTapSelection: PropTypes.func
+};
 
 export default TapList;
