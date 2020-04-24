@@ -40,6 +40,17 @@ class TapControl extends React.Component {
     this.setState({selectedTap: selectedTap});
   }
 
+  handleTapPurchase = (id) => {
+    const currentlySelectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
+    const newQuantityOfTap = currentlySelectedTap.quantity -1;
+    const updatedTap = {...currentlySelectedTap, quantity: newQuantityOfTap};
+    const previousTapList = this.state.masterTapList.filter(tap => tap.id != id);
+    this.setState({
+      masterTapList: [...previousTapList, updatedTap],
+      selectedTap: updatedTap
+    });
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -56,7 +67,8 @@ class TapControl extends React.Component {
     } else {
       currentlyVisibleState = <TapList 
         tapList={this.state.masterTapList} 
-        onTapSelection={this.handleChangingSelectedTap}/>;
+        onTapSelection={this.handleChangingSelectedTap}
+        onClickingSell={this.handleTapPurchase} />;
       buttonText = 'add new tap';
     }
     return (
