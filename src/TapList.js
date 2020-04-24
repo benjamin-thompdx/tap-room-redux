@@ -34,7 +34,8 @@ function TapList(){
           brand={tap.brand}
           price={tap.price}
           style={tap.style}
-          quantity={tap.quantity}/>
+          quantity={tap.quantity}
+          key={index}/>
       )}
     </React.Fragment>
   );
