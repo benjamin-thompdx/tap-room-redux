@@ -1,34 +1,35 @@
 import React from 'react';
 import Tap from './Tap';
+import PropTypes from 'prop-types';
 
-const masterTapList = [
-  {
-    name: 'Green Monster',
-    brand: 'Portland Brewers Guild',
-    price: 8,
-    style: 'Stout',
-    quantity: 124
-  },
-  {
-    name: 'Hoppin Out',
-    brand: 'Portland Brewers Guild',
-    price: 9,
-    style: 'Pale Ale',
-    quantity: 124
-  },
-  {
-    name: 'Sour Squeeze',
-    brand: 'Portland Brewers Guild',
-    price: 8,
-    style: 'Sour',
-    quantity: 124
-  }
-];
+// const masterTapList = [
+//   {
+//     name: 'Green Monster',
+//     brand: 'Portland Brewers Guild',
+//     price: 8,
+//     style: 'Stout',
+//     quantity: 124
+//   },
+//   {
+//     name: 'Hoppin Out',
+//     brand: 'Portland Brewers Guild',
+//     price: 9,
+//     style: 'Pale Ale',
+//     quantity: 124
+//   },
+//   {
+//     name: 'Sour Squeeze',
+//     brand: 'Portland Brewers Guild',
+//     price: 8,
+//     style: 'Sour',
+//     quantity: 124
+//   }
+// ];
 
-function TapList(){
+function TapList(props){
   return (
     <React.Fragment>
-      {masterTapList.map((tap, index) =>
+      {props.tapList.map((tap, index) =>
         <Tap
           name={tap.name}
           brand={tap.brand}
@@ -39,6 +40,10 @@ function TapList(){
       )}
     </React.Fragment>
   );
+}
+
+TapList.propTypes = {
+  tapList: PropTypes.array
 }
 
 export default TapList;
