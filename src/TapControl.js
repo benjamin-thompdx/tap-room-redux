@@ -7,7 +7,8 @@ class TapControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
+      masterTapList: []
     };
   }
 
@@ -21,10 +22,10 @@ class TapControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewTapForm />
+      currentlyVisibleState = <NewTapForm onNewTapCreation={this.handleAddingNewTapToList} />;
       buttonText = 'return to tap list';
     } else {
-      currentlyVisibleState = <TapList />
+      currentlyVisibleState = <TapList tapList={this.state.masterTapList} />;
       buttonText = 'add new tap';
     }
     return (
