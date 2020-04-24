@@ -10,7 +10,7 @@ function Tap(props){
         <p><strong>Price:</strong> <em>${props.price}</em></p>
         <p><strong>Style:</strong> <em>{props.style}</em></p>
         <p><strong>Quantity:</strong> <em>{props.quantity} pints</em></p>
-        <button type="submit">Sell</button>
+        <button onClick={()=> props.whenSellClicked(props.id)} type="submit">Sell</button>
       </div>
     </React.Fragment>
   );
@@ -23,7 +23,8 @@ Tap.propTypes = {
   style: PropTypes.string.isRequired,
   quantity: PropTypes.number.isRequired,
   id: PropTypes.string,
-  whenTapClicked: PropTypes.func
+  whenTapClicked: PropTypes.func,
+  whenSellClicked: PropTypes.func
 }
 
 export default Tap;
