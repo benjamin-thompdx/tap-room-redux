@@ -11,7 +11,7 @@ class TapControl extends React.Component {
     };
   }
 
-  rendor(){
+  render(){
     let currentlyVisibleState = null;
     if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewTapForm />
@@ -24,6 +24,7 @@ class TapControl extends React.Component {
       </React.Fragment>
     );
   }
+
 }
 
 export default TapControl;
