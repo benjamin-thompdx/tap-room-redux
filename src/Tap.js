@@ -17,11 +17,11 @@ function Tap(props){
 }
 
 Tap.propTypes = {
-  name: PropTypes.string,
-  brand: PropTypes.string,
-  price: PropTypes.number,
-  style: PropTypes.string,
-  quantity: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  style: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
   id: PropTypes.string,
   whenTapClicked: PropTypes.func
 }

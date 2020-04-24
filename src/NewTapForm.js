@@ -1,7 +1,6 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import { PropTypes } from 'prop-types';
-import ReusableForm from './ReusableForm';
 
 function NewTapForm(props){
 
@@ -20,9 +19,30 @@ function NewTapForm(props){
 
   return (
     <React.Fragment>
-      <ReusableForm
-        formSubmissionHandler={handleNewTapFormSubmission}
-        button='add tap' />
+      <form onSubmit={handleNewTapFormSubmission}>
+        <h3>New Tap Form</h3>
+        <input 
+          type='text'
+          name='name'
+          placeholder='tap name' />
+        <input 
+          type='text'
+          name='brand'
+          placeholder='tap brand' />
+        <input 
+          type='number'
+          name='price'
+          placeholder='tap price' />
+        <input 
+          type='text'
+          name='style'
+          placeholder='tap style' />
+        <input 
+          type='number'
+          name='quantity'
+          placeholder='tap quantity' />
+        <button type='submit'>add tap</button>
+      </form>
     </React.Fragment>
   );
 }

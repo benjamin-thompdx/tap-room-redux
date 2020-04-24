@@ -6,12 +6,11 @@ function TapDetail(props){
 
   return (
     <React.Fragment>
-      <h1>Tap Details</h1>
-      <p><strong>Name:</strong> <em>{tap.name}</em></p>
-      <p><strong>Brand:</strong> <em>{tap.brand}</em></p>
-      <p><strong>Price:</strong> <em>${tap.price}</em></p>
-      <p><strong>Style:</strong> <em>{tap.style}</em></p>
-      <p><strong>Quantity:</strong> <em>{tap.quantity} pints</em></p>
+      <h1>{tap.name}</h1>
+      <p>{tap.brand}</p>
+      <p>${tap.price}</p>
+      <p>{tap.style}</p>
+      <p>{tap.quantity} pints</p>
     </React.Fragment>
   );
 }

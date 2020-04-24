@@ -44,7 +44,7 @@ class TapControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
 
-    if (this.setState.selectedTap != null) {
+    if (this.state.selectedTap != null) {
       currentlyVisibleState = <TapDetail 
         tap = {this.state.selectedTap} />
       buttonText = 'return to tap list';
