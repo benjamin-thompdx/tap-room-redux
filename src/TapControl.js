@@ -44,7 +44,7 @@ class TapControl extends React.Component {
     const currentlySelectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
     const newQuantityOfTap = currentlySelectedTap.quantity -1;
     const updatedTap = {...currentlySelectedTap, quantity: newQuantityOfTap};
-    const previousTapList = this.state.masterTapList.filter(tap => tap.id != id);
+    const previousTapList = this.state.masterTapList.filter(tap => tap.id !== id);
     this.setState({
       masterTapList: [...previousTapList, updatedTap],
       selectedTap: updatedTap
