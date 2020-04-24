@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './Header';
-import TapList from './TapList';
+import TapControl from './TapControl';
 import './App.css';
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <TapList />
+      <TapControl />
     </React.Fragment>
   );
 }
