@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tap Inventory Tracker
 
-## Available Scripts
+### A website for tracking inventory for a taproom. April 24, 2020
+#### By: Benjamin Thom
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+_A website built in React to track a taproom's taps by name, brand, price, style, and quantity. The application utilizes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Component Tree
+![component tree](tap-room-component-tree.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Specification User Stories
+* A user should be able to create, read, and update taps in the taproom.
+* A user should be able to sell a pint from a tap listed on the tap list, which reduces tap quantity by 1.
+* When the quantity of a tap is 0, the tap should say "out of stock". A user should not be able to reduce the quantity of a tap below 0.
 
-### `npm test`
+## Setup/Installation Requirements
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Node install
 
-### `npm run build`
+###### For macOS:
+_If Homebrew is not installed on your computer already, then install Homebrew by entering the following two commands in Terminal:_
+* $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+* $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Install Git with the following command:_
+* $ brew install git
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+_Next, install Node.js by entering the following command in Terminal:_
+* $ brew install node
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###### For Windows:
+_Please visit the [Node.js website](https://nodejs.org/en/download/) for installation instructions._
 
-### `npm run eject`
+#### Install this application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_Clone this repository via Terminal using the following commands:_
+* _$ cd desktop_
+* _$ git clone {https://github.com/benjamin-thompdx/tap-room}_
+* _$ cd merch-site_
+_Then, confirm that you have navigated to the merch-site project directory by entering "pwd" in Terminal._
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_Next, install npm at the project's root directory via the following commands:_
+* _$ npm install_
+* _$ npm run build_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Known Bugs
 
-## Learn More
+_No known bugs at this time._
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Support and Contact Details
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/tap-room/issues) here on GitHub._
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* Git
+* JavaScript
+* npm
+* Webpack
+* React
 
-### Analyzing the Bundle Size
+### License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+[MIT](https://choosealicense.com/licenses/mit/)
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2020 **_Benjamin Thom_** 
