@@ -15,9 +15,16 @@ class TapControl extends React.Component {
   }
 
   handleClick = () => {
-    this.setState(prevState => ({
+    if (this.state.selectedTap != null) {
+      this.setState({
+        formVisibleOnPage: false,
+        selectedTap: null
+      });
+    } else {
+      this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
-    }));
+      }));
+    }
   }
 
   handleAddingNewTapToList = (newTap) => {

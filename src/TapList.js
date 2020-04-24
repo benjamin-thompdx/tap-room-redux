@@ -2,30 +2,6 @@ import React from 'react';
 import Tap from './Tap';
 import PropTypes from 'prop-types';
 
-// const masterTapList = [
-//   {
-//     name: 'Green Monster',
-//     brand: 'Portland Brewers Guild',
-//     price: 8,
-//     style: 'Stout',
-//     quantity: 124
-//   },
-//   {
-//     name: 'Hoppin Out',
-//     brand: 'Portland Brewers Guild',
-//     price: 9,
-//     style: 'Pale Ale',
-//     quantity: 124
-//   },
-//   {
-//     name: 'Sour Squeeze',
-//     brand: 'Portland Brewers Guild',
-//     price: 8,
-//     style: 'Sour',
-//     quantity: 124
-//   }
-// ];
-
 function TapList(props){
   return (
     <React.Fragment>
@@ -37,8 +13,8 @@ function TapList(props){
           price={tap.price}
           style={tap.style}
           quantity={tap.quantity}
-          id={ticket.id}
-          key={index}/>
+          key={index}
+          id={tap.id}/>
       )}
     </React.Fragment>
   );
