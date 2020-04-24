@@ -1,15 +1,20 @@
 import React from 'react';
 import { v4 } from 'uuid';
+import { PropTypes } from 'prop-types';
 
-function NewTapForm(){
+function NewTapForm(props){
 
   function handleNewTapFormSubmission(event) {
     event.preventDefault();
-    console.log(event.target.name.value);
-    console.log(event.target.brand.value);
-    console.log(event.target.price.value);
-    console.log(event.target.style.value);
-    console.log(event.target.quantity.value);
+    props.onNewTapCreation({
+      name: event.target.name.value,
+      brand: event.target.brand.value,
+      price: event.target.price.value,
+      style: event.target.style.value,
+      quantity: event.target.quantity.value,
+      id: v4()
+    })
+
   }
 
   return (
@@ -41,5 +46,9 @@ function NewTapForm(){
     </React.Fragment>
   );
 }
+
+NewTapForm.propTypes = {
+  onNewTapCreation: PropTypes.func
+};
 
 export default NewTapForm;
