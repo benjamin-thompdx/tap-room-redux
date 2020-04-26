@@ -10,6 +10,9 @@ _A website built in React to track a taproom's taps by name, brand, price, style
 ## Component Tree
 ![component tree](tap-room-component-tree.png)
 
+## Web Page Preview
+![component tree](tap-room-web-page.png)
+
 ## Specification User Stories
 * A user should be able to create, read, and update taps in the taproom.
 * A user should be able to sell a pint from a tap listed on the tap list, which reduces tap quantity by 1.
