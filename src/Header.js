@@ -21,7 +21,7 @@ function Header(){
           <a href="http://www.republiquedesmangues.fr/">Account</a>
         </div>
         <div className="header-section">
-          <h1>Tap Iventory Tracker</h1>
+          <h1>Tap Inventory Tracker</h1>
         </div>
       </div>
     </React.Fragment>
