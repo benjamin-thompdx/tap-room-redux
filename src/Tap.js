@@ -22,9 +22,9 @@ function Tap(props){
           <p><strong>Price:</strong> <em>${props.price}</em></p>
           <p><strong>Style:</strong> <em>{props.style}</em></p>
           <p><strong>Quantity:</strong> <em>{props.quantity} pints</em></p>
-          <div className="buttons">
-            <button onClick={()=> props.whenSellClicked(props.id)} type="submit">Sell</button>
-          </div>
+        </div>
+        <div className="buttons">
+          <button onClick={()=> props.whenSellClicked(props.id)} type="submit">Sell</button>
         </div>
       </div>
     </React.Fragment>
