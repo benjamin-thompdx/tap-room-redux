@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import TapControl from './TapControl';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <React.Fragment>
       <Header />
       <TapControl />
+      <Footer />
     </React.Fragment>
   );
 }

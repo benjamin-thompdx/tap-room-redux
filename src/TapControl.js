@@ -52,11 +52,19 @@ class TapControl extends React.Component {
       });
     } else {
       alert (
-        "No Iventory Available"
+        "🍺 This Tap Is Empty 🍺"
       )};
   }
 
   render(){
+
+    const itemControlStyles = {
+      position: 'relative',
+      top: '30vh',
+      margin: '2%',
+      overflowY: 'auto'
+    }
+
     let currentlyVisibleState = null;
     let buttonText = null;
 
@@ -78,8 +86,20 @@ class TapControl extends React.Component {
     }
     return (
       <React.Fragment>
-        {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div style={itemControlStyles}>
+          <div class="row">
+            <div class="col-md-6">
+              <div className="adjustableButton">
+                <button onClick={this.handleClick}>{buttonText}</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div className="storeFront">
+                {currentlyVisibleState}
+              </div>
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
