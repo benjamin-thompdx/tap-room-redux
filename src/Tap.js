@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 function Tap(props){
 
   const tapStyles = {
-    height: '180px',
-    width: '180px',
+    height: '210px',
+    width: '210px',
     border: '1px solid #33ccff',
     textAlign: 'center',
     padding: '2%',
-    marginBottom: '2em',
-    marginTop: '2em'
+    marginBottom: '3em',
+    marginTop: '3em'
   }
 
   return (
