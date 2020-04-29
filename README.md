@@ -41,7 +41,7 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 _Clone this repository via Terminal using the following commands:_
 * _$ cd desktop_
 * _$ git clone {https://github.com/benjamin-thompdx/tap-room}_
-* _$ cd merch-site_
+* _$ cd tap-room_
 _Then, confirm that you have navigated to the tap-room project directory by entering "pwd" in Terminal._
 
 _Next, install npm at the project's root directory via the following commands:_
