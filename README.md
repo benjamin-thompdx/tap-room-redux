@@ -46,6 +46,7 @@ _Then, confirm that you have navigated to the tap-room project directory by ente
 
 _Next, install npm at the project's root directory via the following commands:_
 * _$ npm install_
+* _$ npm install redux@4.0.5 react-redux@7.1.3_
 * _$ npm run build_
 
 _Open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
