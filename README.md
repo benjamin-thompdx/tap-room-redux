@@ -11,7 +11,7 @@ _A React website with full CRUD functionality that monitors, updates, and manage
 ![component tree](tap-room-redux-component-tree.png)
 
 ## Web Page Preview
-![component tree](tap-room-redux-web-page.png)
+![web page preview](tap-room-redux-web-page.png)
 
 ## Specification User Stories
 * A user should be able to create, read, and update taps in the taproom.
