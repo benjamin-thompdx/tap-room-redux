@@ -5,7 +5,7 @@
 
 ## Description
 
-_A React website with full CRUD functionality that monitors, updates, and manages the shared state of a taproom's inventory utilizing Redux. Inventory is organized by name, brand, price, style, and quantity. The application includes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
+_A React website that monitors, updates, and manages the shared state of a taproom's inventory utilizing Redux. Inventory is organized by name, brand, price, style, quantity, and id. The application includes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
 
 ## Component Tree
 ![component tree](tap-room-redux-component-tree.png)
