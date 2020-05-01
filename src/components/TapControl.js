@@ -4,6 +4,7 @@ import TapList from './TapList';
 import TapDetail from './TapDetail';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import * as a from './../actions';
 
 class TapControl extends React.Component {
 
@@ -15,35 +16,17 @@ class TapControl extends React.Component {
   }
 
   handleClick = () => {
-    if (this.state.selectedTap != null) {
-      this.setState({
-        selectedTap: null
-      });
-    } else {
-      const { dispatch } = this.props;
-      const action = {
-        type: 'TOGGLE_FORM'
-      }
-      dispatch(action);
-    }
+    const { dispatch } = this.props;
+    const action = a.toggleForm();
+    dispatch(action);
+    this.setState({selectedTap: null});
   }
 
   handleAddingNewTapToList = (newTap) => {
     const { dispatch } = this.props;
-    const { id, name, brand, price, style, quantity } = newTap;
-    const action = {
-      type: 'ADD_TAP',
-      id: id,
-      name: name,
-      brand: brand,
-      price: price,
-      style: style,
-      quantity: quantity
-    }
+    const action = a.addTap(newTap);
     dispatch(action);
-    const action2 = {
-      type: 'TOGGLE_FORM'
-    }
+    const action2 = a.toggleForm();
     dispatch(action2);
   }
 
