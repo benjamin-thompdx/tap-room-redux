@@ -3,6 +3,7 @@ import NewTapForm from './NewTapForm';
 import TapList from './TapList';
 import TapDetail from './TapDetail';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 class TapControl extends React.Component {
 
@@ -44,7 +45,7 @@ class TapControl extends React.Component {
   }
 
   handleChangingSelectedTap = (id) => {
-    const selectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
+    const selectedTap = this.props.masterTapList[id];
     this.setState({selectedTap: selectedTap});
   }
 
@@ -87,7 +88,7 @@ class TapControl extends React.Component {
       buttonText = 'return to tap list';
     } else {
       currentlyVisibleState = <TapList 
-        tapList={this.state.masterTapList} 
+        tapList={this.props.masterTapList} 
         onTapSelection={this.handleChangingSelectedTap}
         onClickingSell={this.handleTapPurchase} />;
       buttonText = 'add new tap';
@@ -113,6 +114,10 @@ class TapControl extends React.Component {
   }
 
 }
+
+TapControl.propTypes = {
+  masterTapList: PropTypes.object
+};
 
 const mapStateToProps = stat => {
   return {
