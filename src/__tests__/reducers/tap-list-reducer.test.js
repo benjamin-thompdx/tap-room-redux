@@ -1,4 +1,5 @@
 import tapListReducer from '../../reducers/tap-list-reducer';
+import * as c from './../actions/ActionTypes';
 
 describe('tapListReducer', () => {
 
@@ -19,7 +20,7 @@ describe('tapListReducer', () => {
   test('Should successfully add new tap data to masterTapList', () => {
     const { name, brand, price, style, quantity, id } = tapData;
     action = {
-      type: 'ADD_TAP',
+      type: c.ADD_TAP,
       name: name,
       brand: brand,
       price: price,
