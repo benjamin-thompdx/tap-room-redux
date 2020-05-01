@@ -1,11 +1,11 @@
 # Tap Inventory Tracker
 
-### A website for tracking inventory for a taproom. April 24, 2020
+### A website for tracking inventory for a taproom. May 1st, 2020
 #### By: Benjamin Thom
 
 ## Description
 
-_A website built in React to track a taproom's taps by name, brand, price, style, and quantity. The application utilizes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
+_A React website with full CRUD functionality that monitors, updates, and manages the shared state of a taproom's inventory utilizing Redux. Inventory is organized by name, brand, price, style, and quantity. The application includes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
 
 ## Component Tree
 ![component tree](tap-room-component-tree.png)
@@ -64,7 +64,10 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * JavaScript
 * npm
 * Webpack
+* Jest
 * React
+* Redux
+
 
 ### License
 
