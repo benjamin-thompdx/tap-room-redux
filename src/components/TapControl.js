@@ -2,6 +2,7 @@ import React from 'react';
 import NewTapForm from './NewTapForm';
 import TapList from './TapList';
 import TapDetail from './TapDetail';
+import { connect } from 'react-redux';
 
 class TapControl extends React.Component {
 
@@ -105,5 +106,7 @@ class TapControl extends React.Component {
   }
 
 }
+
+TapControl = connect()(TapControl);
 
 export default TapControl;
