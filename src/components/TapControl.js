@@ -10,7 +10,6 @@ class TapControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false,
       selectedTap: null
     };
   }
@@ -18,13 +17,14 @@ class TapControl extends React.Component {
   handleClick = () => {
     if (this.state.selectedTap != null) {
       this.setState({
-        formVisibleOnPage: false,
         selectedTap: null
       });
     } else {
-      this.setState(prevState => ({
-      formVisibleOnPage: !prevState.formVisibleOnPage
-      }));
+      const { dispatch } = this.props;
+      const action = {
+        type: 'TOGGLE_FORM'
+      }
+      dispatch(action);
     }
   }
 
@@ -41,7 +41,10 @@ class TapControl extends React.Component {
       quantity: quantity
     }
     dispatch(action);
-    this.setState({formVisibleOnPage: false});
+    const action2 = {
+      type: 'TOGGLE_FORM'
+    }
+    dispatch(action2);
   }
 
   handleChangingSelectedTap = (id) => {
@@ -121,7 +124,8 @@ TapControl.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    masterTapList: state
+    masterTapList: state.masterTapList,
+    formVisibleOnPage: state.formVisibleOnPage
   }
 }
 
