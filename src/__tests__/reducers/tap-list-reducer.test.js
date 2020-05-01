@@ -1,5 +1,5 @@
 import tapListReducer from '../../reducers/tap-list-reducer';
-import * as c from './../actions/ActionTypes';
+import * as c from '../../actions/ActionTypes';
 
 describe('tapListReducer', () => {
 
