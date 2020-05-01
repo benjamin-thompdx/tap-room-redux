@@ -8,10 +8,10 @@
 _A React website with full CRUD functionality that monitors, updates, and manages the shared state of a taproom's inventory utilizing Redux. Inventory is organized by name, brand, price, style, and quantity. The application includes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
 
 ## Component Tree
-![component tree](tap-room-component-tree.png)
+![component tree](tap-room-redux-component-tree.png)
 
 ## Web Page Preview
-![component tree](tap-room-web-page.png)
+![component tree](tap-room-redux-web-page.png)
 
 ## Specification User Stories
 * A user should be able to create, read, and update taps in the taproom.
@@ -40,9 +40,9 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 
 _Clone this repository via Terminal using the following commands:_
 * _$ cd desktop_
-* _$ git clone {https://github.com/benjamin-thompdx/tap-room}_
-* _$ cd tap-room_
-_Then, confirm that you have navigated to the tap-room project directory by entering "pwd" in Terminal._
+* _$ git clone {https://github.com/benjamin-thompdx/tap-room-redux}_
+* _$ cd tap-room-redux_
+_Then, confirm that you have navigated to the tap-room-redux project directory by entering "pwd" in Terminal._
 
 _Next, install npm at the project's root directory via the following commands:_
 * _$ npm install_
@@ -57,7 +57,7 @@ _No known bugs at this time._
 
 ## Support and Contact Details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/tap-room/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/tap-room-redux/issues) here on GitHub._
 
 ## Technologies Used
 
