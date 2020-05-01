@@ -119,7 +119,7 @@ TapControl.propTypes = {
   masterTapList: PropTypes.object
 };
 
-const mapStateToProps = stat => {
+const mapStateToProps = state => {
   return {
     masterTapList: state
   }
