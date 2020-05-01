@@ -22,4 +22,18 @@ describe('rootReducer', () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
   });
 
+  test('Check that inital state of tapListReducer matches root reducer', () => {
+    const action = {
+      type: 'ADD_TAP',
+      name: 'Mountain Water',
+      brand: 'Butte Brewery',
+      price: 8,
+      style: 'Blonde Ale',
+      quantity: 124,
+      id: 1
+    }
+    store.dispatch(action);
+    expect(store.getState().masterTapList).toEqual(tapListReducer(undefined, action));
+  });
+
 });
