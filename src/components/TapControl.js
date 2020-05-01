@@ -114,6 +114,12 @@ class TapControl extends React.Component {
 
 }
 
-TapControl = connect()(TapControl);
+const mapStateToProps = stat => {
+  return {
+    masterTapList: state
+  }
+}
+
+TapControl = connect(mapStateToProps)(TapControl);
 
 export default TapControl;
