@@ -24,23 +24,23 @@ function NewTapForm(props){
         <input 
           type='text'
           name='name'
-          placeholder='tap name' />
+          placeholder='tap name' required/>
         <input 
           type='text'
           name='brand'
-          placeholder='tap brand' />
+          placeholder='tap brand' required/>
         <input 
           type='number'
           name='price'
-          placeholder='tap price' />
+          placeholder='tap price' required/>
         <input 
           type='text'
           name='style'
-          placeholder='tap style' />
+          placeholder='tap style' required/>
         <input 
           type='number'
           name='quantity'
-          placeholder='tap quantity' />
+          placeholder='tap quantity' required/>
         <button type='submit'>add tap</button>
       </form>
     </React.Fragment>

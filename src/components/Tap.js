@@ -37,9 +37,9 @@ Tap.propTypes = {
   price: PropTypes.number.isRequired,
   style: PropTypes.string.isRequired,
   quantity: PropTypes.number.isRequired,
-  id: PropTypes.string,
-  whenTapClicked: PropTypes.func,
-  whenSellClicked: PropTypes.func
+  id: PropTypes.string.isRequired,
+  whenTapClicked: PropTypes.func.isRequired,
+  whenSellClicked: PropTypes.func.isRequired
 }
 
 export default Tap;

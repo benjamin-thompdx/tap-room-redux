@@ -78,13 +78,13 @@ class TapControl extends React.Component {
     return (
       <React.Fragment>
         <div style={itemControlStyles}>
-          <div class="row">
-            <div class="col-md-6">
+          <div className="row">
+            <div className="col-md-6">
               <div className="adjustableButton">
                 <button onClick={this.handleClick}>{buttonText}</button>
               </div>
             </div>
-            <div class="col-md-6">
+            <div className="col-md-6">
               <div className="storeFront">
                 {currentlyVisibleState}
               </div>

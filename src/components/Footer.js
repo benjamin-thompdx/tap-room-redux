@@ -17,7 +17,7 @@ function Footer(){
   return(
     <React.Fragment>
     <div style={footerStyles}>
-      <h3><span class='tapFooter'>Acu</span>Tap</h3>
+      <h3><span className='tapFooter'>Acu</span>Tap</h3>
       <h4>&copy; Benjamin Thom</h4>
     </div>
     </React.Fragment>
