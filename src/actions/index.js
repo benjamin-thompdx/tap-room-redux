@@ -16,3 +16,16 @@ export const addTap = (tap) => {
     id: id
   }
 }
+
+export const sellPint = (tap) => {
+  const { name, brand, price, style, quantity, id } = tap;
+  return {
+    type: c.SELL_PINT,
+    name: name,
+    brand: brand,
+    price: price,
+    style: style,
+    quantity: quantity-1,
+    id: id
+  }
+}
