@@ -17,17 +17,17 @@ class TapControl extends React.Component {
 
   handleClick = () => {
     const { dispatch } = this.props;
-    const action = a.toggleForm();
-    dispatch(action);
+    const toggleForm = a.toggleForm();
+    dispatch(toggleForm);
     this.setState({selectedTap: null});
   }
 
   handleAddingNewTapToList = (newTap) => {
     const { dispatch } = this.props;
-    const action = a.addTap(newTap);
-    dispatch(action);
-    const action2 = a.toggleForm();
-    dispatch(action2);
+    const addTap = a.addTap(newTap);
+    dispatch(addTap);
+    const toggleForm = a.toggleForm();
+    dispatch(toggleForm);
   }
 
   handleChangingSelectedTap = (id) => {
@@ -36,15 +36,11 @@ class TapControl extends React.Component {
   }
 
   handleTapPurchase = (id) => {
-    const currentlySelectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
+    const { dispatch } = this.props;
+    const currentlySelectedTap = this.props.masterTapList[id];
     if (currentlySelectedTap.quantity > 0) {
-      const newQuantityOfTap = currentlySelectedTap.quantity -1;
-      const updatedTap = {...currentlySelectedTap, quantity: newQuantityOfTap};
-      const previousTapList = this.state.masterTapList.filter(tap => tap.id !== id);
-      this.setState({
-        masterTapList: [...previousTapList, updatedTap],
-        selectedTap: updatedTap
-      });
+      const sellPint = a.sellPint(currentlySelectedTap);
+      dispatch(sellPint);
     } else {
       alert (
         "🍺 This Tap Is Empty 🍺"
